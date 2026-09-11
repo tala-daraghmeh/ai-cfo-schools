@@ -17,7 +17,8 @@ Historical Financial Data ➡️ Deterministic Analysis ➡️ Forecasting & Sce
 ## 🧱 Project Structure
 
 - **models.py**: Data models and standard school fund categories (Transaction entity, constants).
-- **main.py**: Entry point containing sample data and execution test.
+- **main.py**: Entry point containing data persistence and execution tests.
+- **transaction.json**: Permanent local storage for school fund transactions.
 
 ---
 
@@ -40,19 +41,18 @@ The foundational entity representing school cash flow:
 
 Clone the repository and run:
 
-
 ```bash
 python main.py
+```
 
+---
 
- 🗓️ 20-Day Development Roadmap
+## 🗓️ 20-Day Development Roadmap
 
-- [x] **Day 1: Data Modeling & Foundational Architecture
-- [] **Days 2–4**: Data Persistence & Validation Engine
-- [] **Days 5–8**: Financial Engine (IncomeExpenses, Balance, Reserve Tracking)
-
-- [] **Days 9–12**: Forecasting & What-If Scenario Engine
-
-- [] **Days 13–16**: AI Explanation & Data-Grounded Recommendations Layer
-
-- [] **Days 17–20**: UI Integration, Polish, Demo & Final Pitch
+- [x] **Day 1**: Data Modeling & Foundational Architecture
+- [x] **Day 2**: JSON Data Persistence (Save, Read, and Append)
+- [ ] **Days 3–4**: Data Validation & Storage Functions
+- [ ] **Days 5–8**: Financial Engine (Income, Expenses, Balance, Reserve Tracking)
+- [ ] **Days 9–12**: Forecasting & What-If Scenario Engine
+- [ ] **Days 13–16**: AI Explanation & Data-Grounded Recommendations Layer
+- [ ] **Days 17–20**: UI Integration, Polish, Demo & Final Pitch
