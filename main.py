@@ -1,5 +1,6 @@
 from models import Transaction
-
+import json
+from dataclasses import asdict 
 transactions = [
     Transaction(
     amount=100.0,
@@ -34,5 +35,26 @@ Transaction (
 id=3
 )
 ]
-for t in transactions:
-    print(t)
+
+data_to_save=[asdict(t) for t in transactions]
+with open("transaction.json","w") as file :
+     json.dump(data_to_save,file,indent=4)
+print("Data saved to transaction.json")
+with open("transaction.json","r") as file: 
+ loaded_data=json.load(file)
+print("Data loaded from transaction.json:")
+print(loaded_data)
+new_t = Transaction(
+    amount=50.0,
+    date="2026-12-10",
+    category="Stationery",
+    description="Whiteboard pens",
+    transaction_type="expense",
+    is_planned=True,
+    is_recurring=False,
+    id=4
+) 
+loaded_data.append(asdict(new_t))
+with open("transaction.json","w") as file:
+ json.dump(loaded_data,file,indent=4)
+ print("New transaction added and saved to transaction.json")    

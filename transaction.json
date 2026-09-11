@@ -1,0 +1,42 @@
+[
+    {
+        "amount": 100.0,
+        "date": "2026-9-1",
+        "category": "student fees",
+        "description": "first term fees",
+        "transaction_type": "Income",
+        "is_planned": true,
+        "is_recurring": false,
+        "id": 1
+    },
+    {
+        "amount": 1000,
+        "date": "2026-9-2",
+        "category": "cafeteria",
+        "description": " yearsly cafeteria rent",
+        "transaction_type": "Income",
+        "is_planned": true,
+        "is_recurring": true,
+        "id": 2
+    },
+    {
+        "amount": 200,
+        "date": "2026-12-5",
+        "category": "maintenance",
+        "description": "fixing the broken computer",
+        "transaction_type": "expense",
+        "is_planned": true,
+        "is_recurring": false,
+        "id": 3
+    },
+    {
+        "amount": 50.0,
+        "date": "2026-12-10",
+        "category": "Stationery",
+        "description": "Whiteboard pens",
+        "transaction_type": "expense",
+        "is_planned": true,
+        "is_recurring": false,
+        "id": 4
+    }
+]
